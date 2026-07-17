@@ -78,7 +78,17 @@ python -B scripts/import_cpa_to_sub2api.py --dir "C:/path/to/Grok/cpa"
 
 ## 关联仓库
 
-- https://github.com/qq1254870524/grok-regkit
-- https://github.com/qq1254870524/sub2api
-- https://github.com/qq1254870524/mumu-clipboard-isolation
+- [grok-regkit](https://github.com/qq1254870524/grok-regkit) 主注册工具
+- [sub2api](https://github.com/qq1254870524/sub2api) CPA/CLIProxy OAuth JSON 导入兼容 fork
+- [grok2api](https://github.com/qq1254870524/grok2api) 本机 grok-4.5 模型别名兼容版
 
+## 已知稳定还原点（2026-07-18）
+
+- `grok-regkit` tag: `stable-2026-07-18-sso-mainflow`
+- 主流程：注册成功后**立即**获取 SSO，再后台入 CPA / Sub2API / g2a
+- `pending_sso` 仅兜底，不替代主路径
+- UI fallback 保持关闭
+- 实跑验证：
+  - browser：1/1 即时 SSO + 入池
+  - hybrid：2/2 即时 SSO + 入池，`pending_sso=0`
+- 停注册只停 8092 任务；8010/8080/8317/8318 保持运行
