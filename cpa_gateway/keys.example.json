@@ -1,0 +1,13 @@
+{
+  "keys": {
+    "demo-key-1": {
+      "quota": 100,
+      "note": "replace me"
+    },
+    "demo-key-2": {
+      "quota": 50,
+      "note": "replace me"
+    }
+  },
+  "upstream_api_key": "replace-with-cliproxy-api-key"
+}
