@@ -1,4 +1,4 @@
-# grok-regkit-services
+﻿# grok-regkit-services
 
 与 [grok-regkit](https://github.com/qq1254870524/grok-regkit) 配套的本机服务编排包（公开脱敏版）。
 
@@ -75,3 +75,10 @@ python -B scripts/import_cpa_to_sub2api.py --dir "C:/path/to/Grok/cpa"
 
 - grok-regkit Web「停止注册」只停注册任务
 - 本管理器 `Stop` 才会停 8092/8010/8317/8318 与 Sub2API compose（按脚本实现）
+
+## 关联仓库
+
+- https://github.com/qq1254870524/grok-regkit
+- https://github.com/qq1254870524/sub2api
+- https://github.com/qq1254870524/mumu-clipboard-isolation
+
